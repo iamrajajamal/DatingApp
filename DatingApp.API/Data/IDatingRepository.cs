@@ -6,7 +6,7 @@ using DatingApp.API.Models;
 
 namespace DatingApp.API.Data
 {
-    interface IDatingRepository
+    public interface IDatingRepository
     {
         // add method for both user and photos generic method
         void Add<T>(T entity) where T : class;
