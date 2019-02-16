@@ -50,9 +50,11 @@
                   >(Read {{ message.dateRead | timeAgo }})</span
                 >
               </small>
-              <strong class="primary-font float-right">{{ message.senderKnownAs }}</strong>
+              <strong class="primary-font float-right">{{
+                message.senderKnownAs
+              }}</strong>
             </div>
-            <p>{{ message.content }}}</p>
+            <p>{{ message.content }}</p>
           </div>
         </div>
       </li>
@@ -62,7 +64,11 @@
   <div class="card-footer">
     <form action="">
       <div class="input-group">
-        <input type="text" class="form-control input-sm" placeholder="send a private message">
+        <input
+          type="text"
+          class="form-control input-sm"
+          placeholder="send a private message"
+        />
         <div class="input-group-append">
           <button class="btn btn-primary">Send</button>
         </div>
